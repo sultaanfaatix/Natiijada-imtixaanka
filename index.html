@@ -1268,7 +1268,7 @@
         </div>
         <div class="admin-input-group">
           <label class="admin-label">Password:</label>
-          <input type="password" class="admin-input" id="adminPassword" placeholder="halakan ku qor ereyga Password">
+          <input type="password" class="admin-input" id="adminPassword" placeholder="halakan ku qor ereyga password">
         </div>
         <button class="admin-submit-btn" onclick="adminLogin()">
           <i class="fas fa-sign-in-alt"></i> Halakan guji si aad u gudubto.
@@ -1379,7 +1379,7 @@
       <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/252684129867">Sultaan</a></p>
       <p><i class="fas fa-envelope"></i> Email: <a href="mailto:sultaanfaatix@gmail.com">timacadde1234@gmail.com</a></p>
       <p><i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/61555867060062">BBS</a></p>
-      <p><i class="fas fa-location-dot"></i> Hodan, KPP</p>
+      <p><i class="fas fa-location-dot"></i> Hodan, Taleex</p>
     </div>
 
     <div class="footer">
@@ -1411,8 +1411,8 @@
   <script>
     // Admin credentials
     const adminCredentials = {
-      username: "taysiir",
-      password: "sultaan"
+      username: "sample",
+      password: "password"
     };
 
     let isAdminLoggedIn = false;
@@ -1440,9 +1440,9 @@
         populateStudentsTable();
         
         // Show success message
-        alert('Si guul leh ayaad u soo gududbtay! Kusoo dhawoow dash-boodhka.');
+        alert('Waad u gudubtay waaxda maamulka! Kusoo dhawoow dash-boodhka.');
       } else {
-        alert('Waan ka xumahay hubi username-ka amaba password-ka! Fadlan markale ku celi!.');
+        alert('Waan ka xumahay hubi username-ka amaba -ka! Fadlan markale ku celi!.');
       }
     }
 
@@ -1551,302 +1551,96 @@
     // Faallooyinka gaarka ah
     const studentComments = {
         "001": "waxaad muujisay karti iyo dedaal aad u wanaagsan. waxaad ku guulaysatay inaad noqoto ardayda ugu fiican fasalka! 🎉Horumar wanaagsan!",
-        "002": "waxaad u baahan tahay inaad sii kobciso maadooyinka Bayoolijiga, Juqraafiga iyo kuwa luuqadaha.",
+        "002": "waxaad u baahan tahay inaad sii kobciso maadooyinka scientific-ga, Cilmiga Bulshada iyo kuwa luuqadaha.",
         "003": "waan ka xumahay si aad u hesho ama aad u aragto natiijadaada imtixaanka, fadlan iska xali xafiiska maaliyadda dugsiga.",
-        "1229": "Hambalyo! Waxaad ku guuleysatay inaad noqoto ardeyadda kaalinta 1aad kaga jidha fasalka iyo ardeyadda 1aad ee ugu sarreysa dhammaan natiijada ardeyda kale ee fasalka. 🎉 Horumar wanaagsan Maryama! Rabitaankaaga nolosha Alle raxmadiisa ha kugu siiyo (Aamiin).🎉🎉",
-        "801": "Hambalyo! Waxaad muujisay karti iyo dedaal aad u wanaagsan. Waxaad ku guulaysatay inaad kaalinta 2aad u gasho fasalkaaga. Horumar wanaagsan Salwa! Rabitaankaaga nolosha Alle raxmadiisa ha kugu siiyo (Aamiin).🎉🎉",
-        "128": "Hambalyo! Waxaad muujisay karti iyo dedaal aad u wanaagsan. Waxaad ku guulaysatay inaad kaalinta 3aad u gasho fasalkaaga. Horumar wanaagsan! Rabitaankaaga nolosha Alle raxmadiisa ha kugu siiyo (Aamiin).🎉🎉",
-        "397": "Hambalyo! Waxaad muujisay karti iyo dedaal aad u wanaagsan. Waxaad ku guulaysatay inaad kaalinta 3aad u gasho fasalkaaga. Horumar wanaagsan! Rabitaankaaga nolosha Alle raxmadiisa ha kugu siiyo (Aamiin).🎉🎉",
-        "145": "Hambalyo! Waxaad muujisay karti iyo dedaal aad u wanaagsan. Waxaad ku guulaysatay inaad kaalinta 3aad u gasho fasalkaaga. Horumar wanaagsan! Rabitaankaaga nolosha Alle raxmadiisa ha kugu siiyo (Aamiin).🎉🎉",
-        "131": "Hambalyo! Waxaad muujisay karti iyo dedaal aad u wanaagsan. Waxaad ku guulaysatay inaad kaalinta 4aad u gasho fasalkaaga. Horumar wanaagsan Haala! Rabitaankaaga nolosha Alle raxmadiisa ha kugu siiyo (Aamiin).🎉🎉",
-        "134": "Hambalyo! Waxaad muujisay karti iyo dedaal aad u wanaagsan. Waxaad ku guulaysatay inaad kaalinta 4aad u gasho fasalkaaga. Horumar wanaagsan Juweyriya (Jawaahir)! Rabitaankaaga nolosha Alle raxmadiisa ha kugu siiyo (Aamiin).🎉🎉",
-        "142": "Hambalyo! Waxaad muujisay karti iyo dedaal aad u wanaagsan. Waxaad ku guulaysatay inaad kaalinta 4aad u gasho fasalkaaga. Horumar wanaagsan Saara! Rabitaankaaga nolosha Alle raxmadiisa ha kugu siiyo (Aamiin).🎉🎉",
-        "407": "Hambalyo! Waxaad muujisay karti iyo dedaal aad u wanaagsan. Waxaad ku guulaysatay inaad kaalinta 5aad u gasho fasalkaaga. Horumar wanaagsan Caa'isha (Cayuush)! Rabitaankaaga nolosha Alle raxmadiisa ha kugu siiyo (Aamiin).🎉🎉",
     }; 
     
     const students = [
       {
-        regNo: "001",
-        name: "Sultaan Faatix",
-        motherName: "Hooyo Hani Cumar Maxamuud",
-        class: "0",
-        year: "2024-2025",
-        results: {
-          Xisaab: 5,
-        },
-      },
-      {
-        regNo: "002",
-        name: "Kowther Faatix",
-        motherName: "Hooyo Hani Cumar Maxamuud",
-        class: "7aad B",
-        year: "2024-2025",
-        results: {
-          Xisaab: 9,
-        }
-      },
-      {
-        regNo: "1229",
-        name: "Maryama Cabdirisaaq Xaajji Cabdi",
-        motherName: "Hooyo Hodan Xuseen Cabdi",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 8.70,
-        }
-      },
-      {
-        regNo: "801",
-        name: "Salwa Cabdiraxmaan Cabdillaahi Sheekh Doon",
-        motherName: "Hooyo Anisa Muuse Afrax",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 8.59,
-        }
-      },
-      {
-        regNo: "128",
-        name: "Asma Cabdirisaaq Ciise Afrax",
-        motherName: "Hooyo Caa'isha Bootaan Xayla",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 8.40,
-        }
-      },
-      {
-        regNo: "397",
-        name: "Sumaya Cabdixaliim Maxamuud Maxamed",
-        motherName: "Hooyo Xabiiba Yuusuf",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 8.40,        
-        }
-      },
-      {
-        regNo: "145",
-        name: "Sumaya Cabdiqaadir Jaamac Cilmi",
-        motherName: "Hooyo Carwa Muuse Cabdalle",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 8.40,
-        }
-      },
-      {
-        regNo: "131",
-        name: "Haala Cumar Cabdillaahi Axmed",
-        motherName: "Hooyo Ruqiya Muuse Macallin",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 8.25,
-        }
-      },
-      {
-        regNo: "134",
-        name: "Juweyriya Cabdillaahi Maxamuud Ibraahim",
-        motherName: "Hooyo Safiya Maxamed Cali",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 8.25,
-        }
-      },
-      {
-        regNo: "142",
-        name: "Saara Cabdiqaadir Xasan",
-        motherName: "Hooyo Asmaa Maxamuud Maxamed",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 8.25,
-        }
-      },
-      {
-        regNo: "407",
-        name: "Caa'isha Cabdirisaaq Ciise Afrax",
-        motherName: "Hooyo Maymuun Cali Macallin",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 8.15,
-        }
-      },
-      {
-        regNo: "141",
-        name: "Safiya Cabdiwaaxid Salaad Cali",
-        motherName: "Hooyo Aamina Cabdillaahi Nuur",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 8.10,
-        }
-      },
-      {
-        regNo: "699",
-        name: "Sahla Maxamed Cabdilaahi Cabdulle",
-        motherName: "Hooyo Faaduma Maxamuud Calasoow",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 7.95,
-        }
-      },
-      {
-        regNo: "396",
-        name: "Xamiida Cabdisalaam Cali Farxaan",
-        motherName: "Hooyo Maana Cismaan Cabdiwaaxid",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 7.80,
-        }
-      },
-      {
-        regNo: "395",
-        name: "Sumaya Cabdirisaaq Xasan Siyaad",
-        motherName: "Hooyo Abshira Ibraahim Barre",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 7.80,
-        }
-      },
-      {
-        regNo: "408",
-        name: "Maryam Maxamed Ibraahim Cumar",
-        motherName: "Hooyo Sahra Ibraahim Cali",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 7.35,
-        }
-      },
-      {
-        regNo: "1292",
-        name: "Sumaya Xasan Maxamed Cabdishakuur",
-        motherName: "",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 7.05,
-        }
-      },
-      {
-        regNo: "139",
-        name: "Maryama Maxamed Cabdinuur Sheekh Doon",
-        motherName: "Hooyo Faaduma Saciid Cabdiraxmaan",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 6.98,
-        }
-      },
-      {
-        regNo: "199",
-        name: "Maryama Cabdifitaax Maxamed Maxamed",
-        motherName: "Hooyo Cibaada Cabdi Faarax",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 6.60,
-        }
-      },
-      {
-        regNo: "132",
-        name: "Xaliima Axmed Maxamuud Maxamed",
-        motherName: "Hooyo Fahma Isxaaq",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 6.45,
-        }
-      },
-      {
-        regNo: "130",
-        name: "Faaduma Xuseen Yuusuf Nuur",
-        motherName: "Hooyo Farxiya Axmed Cabdalle",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 6.45,
-        }
-      },
-      {
-        regNo: "794",
-        name: "Caatika Ibraahim Cali Kanee",
-        motherName: "Hooyo Maryama Maxamuud Aadam",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 5.70,
-        }
-      },
-      {
-        regNo: "399",
-        name: "Nasteexa Ibraahim Nuur Aadam",
-        motherName: "Hooyo Aamina Aadam Xasan",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 5.55,
-        }
-      },
-      {
-        regNo: "894",
-        name: "Maariya Cismaan Maxamuud Xuseen",
-        motherName: "Hooyo Safiya Maxamed Yuunis",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 5.40,
-        }
-      },
-      {
-        regNo: "926",
-        name: "Sumaya Cabdiraxmaan Faarax Rooble",
-        motherName: "Hooyo Amina Cumar Maxamuud",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 5.25,
-        }
-      },
-      {
-        regNo: "698",
-        name: "Maa'ida Ciise Cabdillaahi Cumar",
-        motherName: "Hooyo Saciid Cabdi Maxamed",
-        class: "7aad B",
-        year: "2025-2026",
-        results: {
-          XISAAB: 5.10,
+            "regNo": "001",
+    "name": "Hebel Hebel Hebel Hebel (1)",
+    "motherName": "Hebel Hebel",
+    "class": "Form 1",
+    "year": "2025-2026",
+    "results": {
+      "Islamic": 61.00,
+      "Somali": 69.85,
+      "Biology": 59.00,
+      "Chemistry": 59.00,
+      "Arabic": 55.00,
+      "Geography": 79.00,
+      "English": 74.20,
+      "Business": 75.50,
+      "History": 60.10,
+      "Technology": 57.50,
+      "Physics": 51.50,
+      "Math": 59.00
+    }
+  },
+  {
+    "regNo": "002",
+    "name": "Hebel Hebel Hebel Hebel (2)",
+    "motherName": "Hebel Hebel Hebel",
+    "class": "Form 2",
+    "year": "2025-2026",
+    "results": {
+      "Islamic": 38.50,
+      "Somali": 38.50,
+      "Biology": 16.90,
+      "Chemistry": 25.25,
+      "Arabic": 55.00,
+      "Geography": 28.00,
+      "English": 68.20,
+      "Business": 47.20,
+      "History": 57.20,
+      "Technology": 69.75,
+      "Physics": 56.00,
+      "Math": 39.50
+    }
+  },
+  {
+    "regNo": "003",
+    "name": "Hebel Hebel Hebel Hebel (3)",
+    "motherName": "Hebel Hebel Hebel",
+    "class": "Form 3",
+    "year": "2025-2026",
+    "results": {
+      "Islamic": 0.50,
+      "Somali": 0.75,
+      "Biology": 0.00,
+      "Chemistry": 0.50,
+      "Arabic": 0.00,
+      "Geography": 0.00,
+      "English": 0.40,
+      "Business": 0.80,
+      "History": 0.80,
+      "Technology": 0.00,
+      "Physics": 0.00,
+      "Math": 0.00
         },
       }
     ];
 
     function getLetterGrade(score) {
-      if (score >= 9) return { grade: "A+", class: "grade-A" };
-      if (score >= 8.9) return { grade: "A", class: "grade-A" };
-      if (score >= 8.5) return { grade: "A-", class: "grade-A" };
-      if (score >= 8.0) return { grade: "B+", class: "grade-B" };
-      if (score >= 7.5) return { grade: "B", class: "grade-B" };
-      if (score >= 7.0) return { grade: "B-", class: "grade-B" };
-      if (score >= 6.5) return { grade: "C+", class: "grade-C" };
-      if (score >= 6.0) return { grade: "C", class: "grade-C" };
-      if (score >= 5.0) return { grade: "C-", class: "grade-C" };
-      if (score >= 4.0) return { grade: "D", class: "grade-D" };
-      if (score >= 2.0) return { grade: "E", class: "grade-F" };
+      if (score >= 90) return { grade: "A+", class: "grade-A" };
+      if (score >= 89) return { grade: "A", class: "grade-A" };
+      if (score >= 85) return { grade: "A-", class: "grade-A" };
+      if (score >= 80) return { grade: "B+", class: "grade-B" };
+      if (score >= 75) return { grade: "B", class: "grade-B" };
+      if (score >= 70) return { grade: "B-", class: "grade-B" };
+      if (score >= 65) return { grade: "C+", class: "grade-C" };
+      if (score >= 60) return { grade: "C", class: "grade-C" };
+      if (score >= 50) return { grade: "C-", class: "grade-C" };
+      if (score >= 40) return { grade: "D", class: "grade-D" };
+      if (score >= 20) return { grade: "E", class: "grade-F" };
       return { grade: "F", class: "grade-F" };
     }
 
     function getComment(score) {
-        if (score >= 9) return "Heer Sare";
-        if (score >= 7) return "Aad u Wanaagsan";
-        if (score >= 5.0) return "Wanaagsan";
-        if (score >= 4.50) return "Dhexdhexaad";
+        if (score >= 90) return "Heer Sare";
+        if (score >= 70) return "Aad u Wanaagsan";
+        if (score >= 50) return "Wanaagsan";
+        if (score >= 45) return "Dhexdhexaad";
         return "Liita";
     }
 
@@ -1869,10 +1663,10 @@
       const subjects = Object.keys(student.results);
       const scores = Object.values(student.results);
       const total = scores.reduce((a, b) => a + b, 0);
-      const maxTotal = subjects.length * 9.00;
-      const avg = (total / maxTotal) * 9.00;
-      const status = avg >= 4.50 ? 'Gudbay' : 'Haray';
-      const statusClass = avg >= 4.50 ? 'pass' : 'fail';
+      const maxTotal = subjects.length * 100.00;
+      const avg = (total / maxTotal) * 100.00;
+      const status = avg >= 50 ? 'Gudbay' : 'Haray';
+      const statusClass = avg >= 50 ? 'pass' : 'fail';
       
       // Get overall letter grade
       const overallLetterGrade = getLetterGrade(avg);
@@ -1880,11 +1674,11 @@
       // Determine custom comment based on performance
       let customComment = studentComments[student.regNo] || "";
       if (!customComment) {
-          if (avg >= 8) {
+          if (avg >= 90) {
               customComment = "Masha Allah! Waxaad gaadhay heer sare oo caddeyn u ah u ah dedaalka, juhdiga, kartida, firfircoonida iyo waxqabadka wanaagsan.";
-          } else if (avg >= 7.0) {
+          } else if (avg >= 70) {
               customComment = "waxaad si wanaagsan u muujisay faham qoto dheer oo ku saabsan maadooyinka. Haddii aad xoogga saarto meelaha aad caqabada kala kulanto, waxaad gaari doontaa heerar ka sarreeya halka aad hadda joogto.";
-          } else if (avg >= 5.0) {
+          } else if (avg >= 50) {
               customComment = "waxaad muujisay dadaal muuqda oo tilmaamaya in aad ku jirto waddada saxda ah. Haddii aad xoogga saarto meelaha u baahan horumar iyo taageero, waxaad gaari doontaa heer sare. Sii wad dadaalkaaga.";
           } else {
               customComment = "ha niyad jebin, tani ma'aha dhammaad ee waa bilow cusub. Dadaal, la shaqee macallimiinta, hana quusan—waad gaadhi kadhaa guushaada!";
@@ -1898,7 +1692,7 @@
 
           // Trigger confetti
           confetti({
-              particleCount: 1000,
+              particleCount: 700,
               spread: 360,
               origin: { y: 0.6 },
               zIndex: 1001
@@ -1921,7 +1715,7 @@
         <div class="student-info-container">
           <div class="student-info-header">
             <h3 class="student-info-title">MACLUUMAADKA ARDEYGA</h3>
-            <span class="student-info-badge">IMTIXAAN BILEEDKA LABAAD</span>
+            <span class="student-info-badge">IMTIXAANKA NAKHLIGA</span>
           </div>
           
           <div class="student-info-rows">
@@ -1988,7 +1782,7 @@
               <thead>
                 <tr>
                   <th>Maadada</th>
-                  <th>Dhibcaha (la rabo: 9.00)</th>
+                  <th>Dhibcaha (la rabo: 100)</th>
                   <th>Darajada</th>
                   <th>Faallo</th>
                 </tr>
@@ -1998,10 +1792,10 @@
                   const score = scores[index];
                   const letterGrade = getLetterGrade(score);
                   const comment = getComment(score);
-                  const performanceClass = score >= 9.0 ? 'excellent' : score >= 7.5 ? 'good' : score >= 6.0 ? 'average' : score >= 5.0 ? 'poor' : 'fail';
+                  const performanceClass = score >= 90.0 ? 'excellent' : score >= 75.0 ? 'good' : score >= 60.0 ? 'average' : score >= 50.0 ? 'poor' : 'fail';
                   
                   // Calculate width percentage - for 9 points, force 100%
-                  const widthPercentage = score >= 9 ? 100 : (score / 9) * 100;
+                  const widthPercentage = score >= 100 ? 100 : (score / 100) * 100;
                   
                   return `
                     <tr>
